@@ -1,0 +1,23 @@
+<!-- Mermaid.js for diagram rendering -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: 'default'
+  });
+  // Target Jekyll's markdown output: <code class="language-mermaid">
+  await mermaid.run({
+    querySelector: 'code.language-mermaid'
+  });
+</script>
+
+<!-- Style mermaid diagrams -->
+<style>
+  code.language-mermaid {
+    display: block;
+    text-align: center;
+  }
+  pre:has(code.language-mermaid), code.language-mermaid {
+    background-color: transparent;
+  }
+</style>

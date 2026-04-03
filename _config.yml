@@ -1,0 +1,6 @@
+title: Nexaora
+description: Shared artifacts and reports
+show_downloads: false
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
